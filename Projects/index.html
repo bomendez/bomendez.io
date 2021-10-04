@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bo Mendez - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: rgb(0,126,22);
+            background: radial-gradient(circle, rgba(0,126,22,1) 0%, rgba(22,62,29,1) 51%, rgba(33,110,28,1) 100%);
+        }
+
+        .background {
+            position: absolute;
+            width: 800px;
+            background-size: 800px 100%;
+            background-color: rgb(11, 102, 5);
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .background {
+                position: absolute;
+                width: 600px;
+                background-size: 600px 90%;
+                background-repeat: no-repeat;
+                background-position: top center;
+
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .background {
+                position: absolute;
+                width: 100%;
+                background-size: 500px 100%;
+                background-repeat: no-repeat;
+                background-position: top center;
+                font-size: 60%;
+            }
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: sticky;
+        }
+
+        .home_nav, .about_nav, .projects_nav, .skills_nav, .document {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10pt;
+        }
+
+        a {
+            transition: color 1s ease-in;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(203, 230, 197);
+        }
+
+        .document {
+            margin-top: 0;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
+
+        .content_container {
+            display: grid;
+        }
+
+        .subsection {
+            display: grid;
+            padding: 10pt;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: auto;
+            align-items: start;
+        }
+
+        h1 {
+            margin-top: 10pt;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0pt;
+            margin-bottom: 1pt;
+        }
+
+        .non_bullet {
+            margin-left: 5%;
+        }
+
+        .bullet_header {
+            margin-top: 10%;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: grey;
+            font-size: 8pt;
+        }
+
+        #Current {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body class="container">
+    <div class="background">
+        <div class="navbar">
+            <a class="home_nav" href="/">Home</a>
+            <a class="about_nav" href="/about">About Me</a>
+            <a id="Current" class="projects_nav" href="/projects">Projects</a>
+            <a class="skills_nav" href="/contact">Contact</a>
+        </div>
+        <div class="document">
+            <h1>Projects</h1>
+            <div class="content_container">
+                <div class="subsection">
+                    <a href="https://github.com/bomendez/bomendez.github.io/tree/master/Task%20Scheduler"><h3>Task Manager</h3></a>
+                    <div class="right_col">                        
+                        <p>A JSON processor in an MVC structure that saves and displays tasks. Written in Java.</p>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <a href="https://github.com/bomendez/bomendez.github.io/tree/master/PerfectDay"><h3>Perfect Day</h3></a>
+                    <div class="right_col">
+                        <p>A RESTful fitness tracker processor using Spring boot and PostgreSQL. Written in Java.</p>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <a href="https://github.com/bomendez/bomendez.github.io/tree/master/Checkers"><h3>Checkers</h3></a>
+                    <div class="right_col">
+                        <p>An OOD game with a UI and a computer player. Written in Python.</p>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <a href="https://github.com/bomendez/bomendez.github.io/tree/master/Recipes"><h3>Create Your Own Recipe</h3></a>
+                    <div class="right_col">
+                        <p>A simple text processing terminal program. Written in Python.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
